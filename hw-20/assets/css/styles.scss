@@ -1,0 +1,46 @@
+html {
+    font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+
+body {
+    margin: 20px;
+    color: #333;
+}
+
+* {
+    font-family: inherit;
+}
+
+h1 {
+    color: #005a9c;
+    text-align: center;
+}
+
+h2 {
+    color: #007acc;
+    margin-top: 30px;
+}
+
+h3, h4, li {
+    color: #444;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+code {
+    background: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
