@@ -10,17 +10,20 @@
 
     <body>
         
-        <header>
+        <header id="top">
+            <img src="./assets/img/Logo.svg" alt="Company name">
             <nav>
                 <ul>
-                    <li>Product</li>
-                    <li>Customers</li>
-                    <li>Pricng</li>
-                    <li>Resources</li>
-                    <li>Sign In</li>
-                    <li>Sign Up</li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./customers.html">Customers</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
                 </ul>
             </nav>
+            <div class="auth-nav">
+                <a href="./login.html" class="btn">Sign In</a>
+                <a href="./registration" class="btn btn-primary">Sign Up</a>
+            </div>
         </header>
     
         <main>
@@ -32,8 +35,8 @@
                     <p>
                         Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
                     </p>
-                    Get started
-                    Watch the Video
+                    <a href="#" class="btn">Get started</a>
+                    <a href="#" class="btn btn-secondary">Watch the Video</a>
                 </div>
                 <img src="./assets/img/header.svg" alt="The Design Thinking superpowers">
             </section>
@@ -42,7 +45,7 @@
                 <h2>
                     We design tools to unveil your superpowers
                 </h2>
-                <div>
+                <article>
                     <img src="./assets/img/first-tests.svg" alt="First click tests">
                     <h3>
                         First click tests
@@ -50,37 +53,35 @@
                     <p>
                         While most people enjoy casino gambling.
                     </p>
-                </div>
-                <div>
-                    <img src="./assets/img/design-surveys.svg" alt="Design surveys">
+                </article>
+                <article>
+                    <img src="./assets/img/design-surveys.svg" alt="">
                     <h3>
                         Design surveys
                     </h3>
                     <p>
                         Sports betting, lottery and bingo playing for the fun
                     </p>
-                </div>
-                <div>
-                    <img src="./assets/img/preference-tests.svg" alt="Preference tests">
+                </article>
+                <article>
+                    <img src="./assets/img/preference-tests.svg" alt="">
                     <h3>
                         Preference tests
                     </h3>
                     <p>
                         The Myspace page defines the individual.
                     </p>
-                </div>
-                <div>
-                    <img src="./assets/img/second-tests.svg" alt="Five second tests">
+                </article>
+                <article>
+                    <img src="./assets/img/second-tests.svg" alt="">
                     <h3>
                         Five second tests
                     </h3>
                     <p>
                         Personal choices and the overall personality of the person.
                     </p>
-                </div>
-                <button>
-                    SIGN UP NOW
-                </button>
+                </article>
+                <a href="./registration" class="btn">SIGN UP NOW</a>
             </section>
 
             <section>
@@ -177,36 +178,52 @@
                     Custom Design designers
                 </p>
                 <p>
-                    knowing you're always on the best energy deal.
+                    If you are looking for a new way to promote your business that won’t cost you more money,
                 </p>
+                <img src="./assets/img/marketers.svg" alt="Optimisation for Marketers">
+
             </section>
         
         </main> 
 
         <footer>
+            
+            <hr>
+            <!-- hr Стилізую потім. Це щоб не забути -->
             <div>
-                <img src="./assets/img/Logo.svg" alt="logo">
+                <a href="#top">
+                    <img src="./assets/img/Logo.svg" alt="Company name">
+                </a>
             </div>
             <div>
-                <!-- Quick Links -->
-                About Us
-                Blog
-                Contact
-                FAQ
+                <ul>
+                    <!-- прихований заголовок "Quick Links" -->
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
             </div>
             <div>
-                <!-- Legal Stuff -->
-                Disclaimer
-                Financing
-                Privacy Policy
-                Terms of Service
+                <ul>
+                    <!-- прихований заголовок "Legal Stuff" -->
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./financing.html">Financing</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">Terms of Service</a></li>
+                </ul>
             </div>
-            <form action="">
-                <!-- Enter your phone Number -->
-            <button>
-                Sign up Now
-            </button>
+                <!-- приховані рядки "knowing you're always on the best energy deal. -->
+                <!-- Enter your phone Number" -->
+            <form action="./subscribe" method="post">
+                <p>
+                    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                </p>
+                <p>
+                    <button type="submit">Sign up Now</button>
+                </p>
             </form>
+
         </footer>
 
     </body>
