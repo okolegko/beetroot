@@ -4,11 +4,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Home Work 05 - Form</title>
     </head>
 
     <body>
-        
+        <form style="background-color: #EFEFEF; padding: 20px;" action="" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <p>
+                <label for="fullname">Повне ім’я</label>
+                <input type="text" id="fullname" name="fullname" size="30">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" size="30">
+            </p>
+            <p>
+                <label for="password1">Пароль</label>
+                <input type="password" id="password1" name="password1" size="30">
+            </p>
+            <p>
+                <label for="password2">Пароль ще раз</label>
+                <input type="password" id="password2" name="password2" size="30">
+            </p>
+
+            
+            
+            Стать
+            Вік 
+            Курс
+            Повна адреса
+            Країна, регіон, місто/селище, вулиця
+            Я погоджуюсь з обробкою персональних даних
+            Очистити форму
+            Зареєстркуватися
+
+        </form> 
     </body>
 
 </html>
