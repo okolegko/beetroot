@@ -26,22 +26,30 @@
                 <input type="password" id="password2" name="password2" size="30" placeholder="Password again">
             </p>
             <span>Стать</span>
-            <label><input type="radio" name="gender" value="Чоловіча" checked></label>
-            <label><input type="radio" name="gender" value="Жіноча"></label>
+            <label><input type="radio" name="gender" value="male" checked>Чоловіча</label>
+            <label><input type="radio" name="gender" value="female">Жіноча</label>
             <br>
             <span>Вік</span>
-            <label><input type="number" size="6" placeholder="18"></label>
+            <label><input type="number" name="age" size="6" min="1" max="150" placeholder="18"></label>
             <br>
-            
-            
-            Вік 
-            Курс
-            Повна адреса
-            Країна, регіон, місто/селище, вулиця
+            <span>Курс</span>
+            <label><input type="select" name="course"></label>
+            Виберіть Курс
+            HTML5
+            CSS3
+            Javascript
+            React 
+            Angular
+            NodeJS
+            <br>
+            <span>Повна адреса</span>
+            <textarea name="address" id="" rows="3" cols="30" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>           
+            <br>
+            <input type="checkbox">
             Я погоджуюсь з обробкою персональних даних
-            Очистити форму
-            Зареєстркуватися
-
+            <br>
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєстркуватися</button>
         </form> 
     </body>
 
