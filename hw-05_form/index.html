@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <form style="background-color: #EFEFEF; padding: 20px;" action="" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <form style="background-color: #EFEFEF; padding: 20px;" action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
             <p>
                 <label for="fullname">Повне ім’я</label>
                 <input type="text" id="fullname" name="fullname" size="30" minlength="5" placeholder="Rami Malek" required>
@@ -33,14 +33,25 @@
             <label><input type="number" name="age" size="6" min="1" max="150" placeholder="18"></label>
             <br>
             <span>Курс</span>
-            <label><input type="select" name="course"></label>
-            Виберіть Курс
-            HTML5
-            CSS3
-            Javascript
-            React 
-            Angular
-            NodeJS
+            <select name="course" value="-=Виберіть курс=-">
+                <optgroup label="Початковий рівень">
+                    <option value="html">HTML 5</option>
+                    <option value="css">CSS 3</option>
+                    <option value="js">Javascript ES6+</option>
+                </optgroup>
+                <optgroup label="Просунутий рівень">
+                    <option value="react">React</option>
+                    <option value="angular">Angular</option>
+                    <option value="vue">Vue</option>
+                    <option value="node">NodeJS</option>
+                </optgroup>
+                
+            </select>    
+            
+            
+            
+                    
+            
             <br>
             <span>Повна адреса</span>
             <textarea name="address" id="" rows="3" cols="30" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>           
