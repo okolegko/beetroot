@@ -15,25 +15,25 @@
             </p>
             <p>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" size="30" placeholder="ramimalek@gmail.com">
+                <input type="email" id="email" name="email" size="30" placeholder="ramimalek@gmail.com" required>
             </p>
             <p>
                 <label for="password1">Пароль</label>
-                <input type="password" id="password1" name="password1" size="30" placeholder="Password">
+                <input type="password" id="password1" name="password1" size="30" placeholder="Password" required>
             </p>
             <p>
                 <label for="password2">Пароль ще раз</label>
-                <input type="password" id="password2" name="password2" size="30" placeholder="Password again">
+                <input type="password" id="password2" name="password2" size="30" placeholder="Password again" required>
             </p>
             <span>Стать</span>
             <label><input type="radio" name="gender" value="male" checked>Чоловіча</label>
             <label><input type="radio" name="gender" value="female">Жіноча</label>
             <br>
             <span>Вік</span>
-            <label><input type="number" name="age" size="6" min="1" max="150" placeholder="18"></label>
+            <label><input type="number" name="age" size="6" min="1" max="150" placeholder="18" required></label>
             <br>
             <span>Курс</span>
-            <select name="course" value="-=Виберіть курс=-">
+            <select name="course[]" multiple="" value="-=Виберіть курс=-" required>
                 <optgroup label="Початковий рівень">
                     <option value="html">HTML 5</option>
                     <option value="css">CSS 3</option>
