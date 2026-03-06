@@ -32,12 +32,13 @@
             <br><br>
             
             <label>Вік
-                <input type="number" name="age" size="6" min="1" max="150" placeholder="18" required>
+                <input type="number" name="age" min="1" max="150" placeholder="18" required>
             </label>
             <br><br>
             
             <span>Курс</span>
-            <select name="course[]" multiple value="-=Виберіть курс=-" required>
+            <select name="course[]" multiple required>
+                <option disabled selected>-=Виберіть курс=-</option>
                 <optgroup label="Початковий рівень">
                     <option value="html">HTML 5</option>
                     <option value="css">CSS 3</option>
@@ -53,17 +54,17 @@
             <br><br>
             
             <span>Повна адреса</span>
-                <textarea name="address" id="" rows="3" cols="30" placeholder="Країна, регіон, місто/селище, вулиця" recuired></textarea>           
+                <textarea name="address" id="" rows="3" cols="30" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>           
             <br><br>
             
             <label>
-                <input type="checkbox" recuired>
+                <input type="checkbox" required>
                 Я погоджуюсь з обробкою персональних даних
             </label>    
             <br><br>
             
             <button type="reset">Очистити форму</button>
-            <button type="submit">Зареєстркуватися</button>
+            <button type="submit">Зареєструватися</button>
         </form> 
     </body>
 
