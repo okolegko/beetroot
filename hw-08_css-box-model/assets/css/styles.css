@@ -1,7 +1,18 @@
+.container {
+    box-sizing: border-box;
+    background-color: #3399CC;
+    border-color: #2B81AC; 
+    width: 1440px;
+    height: 900px;
+}
 .cities {
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 26px 0px 27px 0px;
-    background: 
+    /* background:  */
+}
+.cities li {
+    margin: 0;
+    display: inline-block;
 }
