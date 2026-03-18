@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 .container {
     background-color: #3399CC;
     border: 25px solid #2B81AC; 
@@ -39,7 +38,6 @@ li:hover {
     opacity: 70%;
     transition: all .1s ease-in;
 }
-
 .h1 {
     font-weight: 100;
     font-size: 1.3125rem;
